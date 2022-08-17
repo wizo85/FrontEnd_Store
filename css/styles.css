@@ -1,0 +1,93 @@
+:root {
+    --primary: #9c27b0;
+    --primaryBlack: #89119d;
+    --secundary: #ffce00;
+    --secundaryBlack: rgb(233,287,2);
+    --white: #fff;
+    --black: #000;
+
+    --fondinitial: 'Ubuntu', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/** Globales **/
+
+body {
+    background-color: var(--primary);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+p {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1, h2, h3 {
+    text-align: center;
+    color: var(--secundary);
+    font-family: var(--fondinitial);
+}
+h1 { font-size: 4rem;}
+h2 { font-size: 3.2rem;}
+h3 { font-size: 2.4rem;}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+.header_logo {
+    margin: 3rem 0;
+}
+
+/** Footer **/
+
+.footer {
+    background-color: var(--primaryBlack);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+.footer_text {
+    text-align: center;
+    font-family: var(--fondinitial);
+    
+    
+}
+
+/** Navegation **/
+
+.navegation {
+    background-color: var(--primaryBlack);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.navegation_link {
+    font-family: var(--fondinitial);
+    color: var(--white);
+    font-size: 3rem;
+}
+.navegation_link--active,
+.navegation_link:hover {
+    color: var(--secundary);
+}
+
